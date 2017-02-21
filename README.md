@@ -1,4 +1,4 @@
-Exercise 1
+#A. match_ends
 def match_ends(words):
   number = 0
 
@@ -10,7 +10,7 @@ def match_ends(words):
 strs = ['cccd']
 
 match_ends(strs)
-# the return result will be 0 
+
 def match_ends(words):
   number = 0
 
@@ -22,8 +22,8 @@ def match_ends(words):
 strs = ['cccc']
 
 match_ends(strs)
-# the return result will be 0 
 
+#B. front_x
 def front_x(words):
   list_a = []
   list_x = []
@@ -37,7 +37,7 @@ def front_x(words):
   return sorted(list_x) + sorted(list_a)
 strs = ['mix', 'xyz', 'apple', 'xanadu', 'aardvark'] 
 front_x(strs)
-# the return will be ['xanadu', 'xyz', 'aardvark', 'apple', 'mix']
+#C. sort_last
 
 def last(t): return t[-1]
 
@@ -76,7 +76,7 @@ def main():
   test(sort_last([(1, 7), (1, 3), (3, 4, 5), (2, 2)]),
        [(2, 2), (1, 3), (3, 4, 5), (1, 7)])
 
-
+#D. remove_adjacent
 if __name__ == '__main__':
   main()
 #Section D
@@ -90,6 +90,8 @@ def remove_adjacent(nums):
   return list
 str = [1,2,2,3]
 remove_adjacent(str)
+#E. linear_merge
+
 def linear_merge(list_1, list_2):
       list_1.extend(list_2) 
       return sorted(list_1)
